@@ -1,0 +1,75 @@
+body{background-color: black;}
+section{
+    width: 80%;
+    margin: 10%;
+    background-position: center;
+    background-image: url("./src/darkbricks.png");
+    background-repeat: repeat;
+    background-size: contain;
+    color: blueviolet;
+    font-size: large;
+   *{
+    text-decoration: none;
+    list-style: none;
+  }
+}
+header{
+    width: 90%;
+    margin: 5%;
+    font-size: larger;
+    div{
+        background-color: black;
+        width: 60%;
+        margin: 1% 20%;
+        padding-left: 5%;
+        img{
+            position: absolute;
+            top: 40%;
+            left: 60%;
+        }
+    }
+    ul{
+        position: relative;
+        top: 10%;
+        left: 15%;
+    }
+}
+p{width: 90%;}
+a{color: #ffffff;}
+a:hover{color: red;}
+.gray{color: gray;}
+.gray:hover{color: lightgray;}
+.row, .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: center;
+}
+.outlineStyle, div.Ensolation{
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: blueviolet;
+}
+.padding{padding: 1%;}
+div.Ensolation{
+    background-image: url("./src/goldenbackground.png");
+    outline-color: #ffffff;
+    color: black;
+    *{outline-color: #ffffff;}
+}
+#keyWords{display: none;}
+@media screen and (max-width: 850px){
+    .row{flex-direction: column;}
+    .smaller{width: 90%;}
+    *{font-size: medium;}
+    header div img{display: none;}
+    section{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-height: 1480px){header div img{top: 22%;}}
